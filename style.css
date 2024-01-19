@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root{
+   --blå: #2A324B;
+   --grå: #58699D;
+   --lilla:#E1E5EE;
+   --Hvit: #fff;
+}
+
+/*Det blåe*/
+.navbar ul{
+    list-style-type: none;
+    background-color: var(--blå);
+    padding: 0px;
+    margin: 0px; 
+}
