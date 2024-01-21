@@ -7,6 +7,12 @@
    --lilla:#E1E5EE;
    --Hvit: #fff;
 }
+body{
+    margin: 0px; 
+}
+ main{
+    margin: 20px; 
+ }
 
 /*Det blåe*/
 .navbar ul{
@@ -14,4 +20,26 @@
     background-color: var(--blå);
     padding: 0px;
     margin: 0px; 
+    overflow: hidden;
+}
+
+.navbar a{
+    color: var(--Hvit);
+    text-decoration: none; 
+    padding: 15px;
+    display: block; 
+    text-align: center ;
+}
+
+
+.navbar a:hover{
+    background-color: var(--Hvit);
+   
+
+
+}
+
+.navbar li{
+    float: left;
+   
 }
