@@ -4,7 +4,7 @@ const hovedSeksjon = document.querySelector('main section')
 
 function genererNavigasjon(resurser) {
     const navigasjonsHtml = resurser.map(resurs => {
-        return `<li id="${resurs.category}" style="background-color: #2A324B; padding: 12px 20px;">${resurs.category}</li>`
+        return `<li id="${resurs.category}">${resurs.category}</li>`
     }).join('')
 
     navigasjonsContainer.innerHTML = navigasjonsHtml
