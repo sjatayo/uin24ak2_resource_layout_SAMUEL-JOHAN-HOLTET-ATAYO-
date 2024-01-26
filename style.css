@@ -58,9 +58,6 @@ main nav {
 
 }
 
-category {
-    width: 100%;
-}
 
 .navbar ul li:hover {
     background-color: var(--Hvit);
@@ -82,12 +79,10 @@ category {
     text-decoration: none;
     padding: 12px 20px;
     cursor: pointer;
-    /* padding-right: 50px; */
+   
 }
 
-/* .navbar ul li:focus{
-    background-color: var(--Hvit);
-} */
+
 
 section {
     width: 1200px;

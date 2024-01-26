@@ -6,6 +6,7 @@ function genererNavigasjon(resurser) {
     const navigasjonsHtml = resurser.map(resurs => {
         return `<li id="${resurs.category}">${resurs.category}</li>`
     }).join('')
+   
 
     navigasjonsContainer.innerHTML = navigasjonsHtml
 
@@ -34,5 +35,7 @@ function visInnhold(kategori) {
         hovedSeksjon.innerHTML = innholdHtml
     }
 }
+
+
 
 genererNavigasjon(resources)
