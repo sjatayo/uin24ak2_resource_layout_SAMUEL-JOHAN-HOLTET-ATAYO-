@@ -1,54 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-
-:root{
+:root {
    --blå: #2A324B;
    --grå: #58699D;
-   --lilla:#E1E5EE;
+   --lilla: #E1E5EE;
    --Hvit: #fff;
+   --Font: "Roboto", sans-serif; 
 }
-body{
-    margin: 0px; 
+
+body {
+    margin: 0;
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    background-color: var(--lilla);
+    font-family: var(--Font);
+}
+
+main {
+    margin: 20px;
+    max-width: 1200px;
+    width: 100%;
+    height: 400px;
     background-color: var(--Hvit);
 }
- 
-main{
-    margin: 20px; 
- }
 
-/*Det blåe*/
-.navbar ul{
+main nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
     list-style-type: none;
     background-color: var(--blå);
-    padding: 0px;
-    margin: 0px; 
+    padding: 20px; 
+    margin: 0;
     overflow: hidden;
     max-width: 1200px;
-    
-    
-
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 0.5rem;
 }
 
-.navbar a{
+.navbar li {
+   color: var(--Hvit);
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+
+.navbar li:not(:first-child){
+    margin-left: 20px;
+}
+
+.navbar ul{
+    font-weight: bold;
+    font-family: var(--Font);
+}
+.navbar li a {
     color: var(--Hvit);
-    text-decoration: none; 
-    padding: 15px;
-    display: block; 
-    text-align: center ;
+    text-decoration: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    padding-right: 50px;
 }
 
-
-.navbar a:hover{
-        background-color: var(--Hvit);
-        color:var(--blå);
-         
+.navbar ul li:focus{
+    background-color: var(--Hvit);
 }
 
-.navbar li{
-    float: left;
-   
+section {
+    width: 1200px;
 }
+
+section{
+    margin: 2rem; 
+}
+

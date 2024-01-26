@@ -17,15 +17,18 @@ function genererNavigasjon(resurser) {
 }
 
 function visInnhold(kategori) {
-    const resurs = resources.find(res => res.category === kategori)
+    const resurser = resources.filter(res => res.category === kategori)
 
-    if (resurs) {
-        let innholdHtml = `<h1>${resurs.category}</h1>`
-        innholdHtml += `<p>${resurs.text}</p>`
+    if (resurser.length > 0) {
+        let innholdHtml = `<h1>${resurser[0].category}</h1>` 
+        innholdHtml += `<p>${resurser[0].text}</p>`
         innholdHtml += '<ul>'
-        resurs.sources.forEach(kilde => {
-            innholdHtml += `<li><a href="${kilde.url}" target="_blank">${kilde.title}</a></li>`
+
+        const kilderHtml = resurser[0].sources.map(kilde => {
+            return `<li><a href="${kilde.url}" target="_blank">${kilde.title}</a></li>`
         })
+
+        innholdHtml += kilderHtml.join('')
         innholdHtml += '</ul>'
 
         hovedSeksjon.innerHTML = innholdHtml
